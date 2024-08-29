@@ -27,7 +27,7 @@ audio:not([controls]) {
 }
 
 a {
-  background-color: #0000;
+  background-color: #ffffff;
 }
 
 a:active, a:hover {
@@ -2710,7 +2710,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .body {
-  background-color: #000000f5;
+  background-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
 }
