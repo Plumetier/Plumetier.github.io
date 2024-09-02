@@ -2054,10 +2054,10 @@ textarea.w-input, textarea.w-select {
 }
 
 :root {
-  --background-lite: #1d1d1d;
-  --shadow1: #003f3440;
-  --accent: #00ffbc;
   --secondary: #302f2f;
+  --background-lite: #1d1d1d;
+  --accent: #00ffbc;
+  --shadow1: #003f3440;
   --typeface: #dadada;
   --background: #181818;
   --shadow2: #0000003d;
@@ -2631,10 +2631,10 @@ a {
 }
 
 .list-items {
+  border: 2px solid var(--secondary);
   background-color: var(--background-lite);
-  box-shadow: 0 16px 16px 0 var(--shadow1), 0 8px 8px 0 var(--shadow1), 0 4px 4px 0 var(--shadow1), 0 2px 2px 0 var(--shadow1), 0 1px 1px 0 var(--shadow1);
   color: #dadada;
-  border-radius: 20px;
+  border-radius: 12px;
   height: 155px;
   margin: 3vw;
   padding-right: 15px;
@@ -2923,6 +2923,7 @@ a {
   justify-content: center;
   align-items: center;
   max-width: none;
+  height: 100vh;
   margin-bottom: 0;
   display: flex;
 }
@@ -2936,23 +2937,15 @@ a {
 }
 
 .text-block-2 {
+  color: #79797912;
   text-align: left;
-  -webkit-text-stroke-color: #000;
-  text-shadow: 3px 3px 2px #31313133;
-  -webkit-text-fill-color: transparent;
   writing-mode: vertical-rl;
-  color: #0000;
-  background-color: #0c0c0c;
-  background-image: url("../images/graph-paper.svg");
-  background-position: 0 0;
-  background-size: 125px;
-  background-attachment: scroll;
-  -webkit-background-clip: text;
-  background-clip: text;
-  margin: 3vw 1.5vw 3vw 3vw;
-  font-size: 60px;
+  margin-top: 3vw;
+  margin-bottom: 1vw;
+  margin-left: 3vw;
+  font-size: 140px;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 120%;
   position: fixed;
   inset: auto 0% 0% auto;
 }
@@ -3081,16 +3074,17 @@ a {
   z-index: 100;
   text-align: left;
   -webkit-text-stroke-color: #000;
-  text-shadow: 0 8px 8px var(--shadow1), 0 4px 4px var(--shadow1), 0 2px 2px var(--shadow1), 0 1px 1px var(--shadow1);
   -webkit-text-fill-color: inherit;
   writing-mode: vertical-rl;
   color: #dadada;
   background-color: #dadada00;
   background-clip: border-box;
-  margin: 3vw 1.5vw 3vw 3vw;
-  font-size: 60px;
+  margin-top: 3vw;
+  margin-bottom: 1vw;
+  margin-left: 3vw;
+  font-size: 140px;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 120%;
   position: fixed;
   inset: auto 0% 0% auto;
   transform: none;
@@ -3242,6 +3236,7 @@ a {
 
 .hero-heading-right-2.about-me-section {
   padding-top: 0;
+  transform: translate(0, 50%);
 }
 
 .container-13 {
@@ -3260,9 +3255,9 @@ a {
 }
 
 .hero-split-3 {
-  border: 5px solid var(--secondary);
+  border: 2px solid var(--secondary);
   background-color: var(--background-lite);
-  box-shadow: inset 0 16px 16px 0 var(--shadow1), inset 0 8px 8px 0 var(--shadow1), inset 0 4px 4px 0 var(--shadow1), inset 0 2px 2px 0 var(--shadow1), inset 0 1px 1px 0 var(--shadow1), 0 16px 16px 0 var(--shadow1), 0 8px 8px 0 var(--shadow1), 0 4px 4px 0 var(--shadow1), 0 2px 2px 0 var(--shadow1), 0 1px 1px 0 var(--shadow1);
+  box-shadow: inset 0 16px 16px 0 var(--shadow1), inset 0 8px 8px 0 var(--shadow1), inset 0 4px 4px 0 var(--shadow1), inset 0 2px 2px 0 var(--shadow1), inset 0 1px 1px 0 var(--shadow1);
   border-radius: 20px;
   flex-direction: column;
   justify-content: flex-start;
@@ -3283,14 +3278,15 @@ a {
 }
 
 .button-primary-5 {
-  background-color: var(--accent);
-  color: #2b2b2b;
-  letter-spacing: 2px;
+  color: var(--accent);
   text-transform: uppercase;
-  border-radius: 20px;
-  padding: 12px 25px;
-  font-size: 12px;
-  font-weight: 600;
+  background-color: #0000;
+  border-radius: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 20px;
   transition: all .2s;
 }
@@ -3455,8 +3451,6 @@ a {
 }
 
 .hero-split-3-copy {
-  background-color: var(--background-lite);
-  box-shadow: 0 16px 16px 0 var(--shadow1), 0 8px 8px 0 var(--shadow1), 0 4px 4px 0 var(--shadow1), 0 2px 2px 0 var(--shadow1), 0 1px 1px 0 var(--shadow1);
   border-radius: 20px;
   flex-direction: column;
   justify-content: flex-start;
@@ -3479,7 +3473,7 @@ a {
 
 .parallax-video {
   z-index: 1;
-  perspective: 100px;
+  perspective: 300px;
   flex-flow: column;
   justify-content: flex-end;
   align-items: center;
@@ -3503,6 +3497,7 @@ a {
   width: 100vw;
   height: 3vh;
   position: relative;
+  overflow: hidden;
 }
 
 .parallax_background {
@@ -3522,29 +3517,29 @@ a {
   z-index: 3;
   aspect-ratio: auto;
   object-fit: fill;
-  width: 100vw;
+  width: 110vw;
   height: 150vh;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  inset: auto 0% 0%;
+  inset: auto 0% 0% -5vh;
 }
 
 .parallax_background_mid {
   z-index: 2;
-  width: 100vw;
+  width: 110vw;
   height: 150vh;
   position: absolute;
-  inset: auto 0% 0%;
+  inset: auto 0% 0% -5vh;
 }
 
 .parallax_foreground {
   z-index: 4;
-  width: 100vw;
+  width: 110vw;
   height: 150vh;
   display: block;
   position: absolute;
-  inset: auto 0% 0%;
+  inset: auto 0% 0% -5vh;
 }
 
 .cursor_camera {
@@ -3580,7 +3575,7 @@ a {
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
   background-clip: content-box;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -3786,8 +3781,12 @@ a {
     max-width: none;
   }
 
-  .text-block-2, .text-block-3, .text-block-2-copy, .text-block-2-copy, .text-block-2-copy, .text-block-2-copy {
+  .text-block-3, .text-block-2-copy, .text-block-2-copy, .text-block-2-copy {
     font-size: 10vw;
+  }
+
+  .text-block-2-copy {
+    font-size: 140px;
   }
 
   .priyam-infoscrollmask {
@@ -4007,13 +4006,15 @@ a {
 
   .dropdown-list {
     z-index: -1;
+    border: 2px solid var(--secondary);
+    background-color: var(--background-lite);
     border-radius: 20px;
     flex-flow: column;
     justify-content: center;
     align-items: flex-end;
     padding-top: 80px;
     padding-bottom: 11px;
-    padding-left: 23px;
+    padding-left: 25px;
   }
 
   .body {
@@ -4087,6 +4088,7 @@ a {
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 7.5vw;
+    transform: translate(11px)scale(1.6);
   }
 
   .div-block-2 {
@@ -4102,7 +4104,6 @@ a {
   }
 
   .nav-text-desk.mobile {
-    color: #2e2e2e;
     text-align: right;
     width: 130px;
     margin-left: 0;
@@ -4112,7 +4113,14 @@ a {
     font-size: 25px;
   }
 
-  .text-block-2, .text-block-3, .text-block-2-copy {
+  .text-block-2 {
+    vertical-align: baseline;
+    font-family: Open Sans, sans-serif;
+    font-size: 50px;
+    display: inline-block;
+  }
+
+  .text-block-3, .text-block-2-copy {
     vertical-align: baseline;
     font-family: Open Sans, sans-serif;
     display: inline-block;
@@ -4127,6 +4135,7 @@ a {
     vertical-align: baseline;
     vertical-align: baseline;
     font-family: Open Sans, sans-serif;
+    font-size: 50px;
     display: inline-block;
   }
 
@@ -4290,6 +4299,14 @@ a {
     margin-right: auto;
     display: block;
     position: relative;
+  }
+
+  .icon {
+    transform: translate(0)scale(1.6);
+  }
+
+  .text-block-2, .text-block-2-copy {
+    font-size: 80px;
   }
 
   .container-13, .container-14 {
