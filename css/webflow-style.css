@@ -2061,6 +2061,7 @@ textarea.w-input, textarea.w-select {
   --typeface: #dadada;
   --background: #181818;
   --shadow2: #0000003d;
+  --priyam-info-mask-scroll: -100vh;
 }
 
 .w-layout-blockcontainer {
@@ -2908,14 +2909,20 @@ a {
 }
 
 .works {
+  box-shadow: 0 2px 0 0 var(--secondary);
+  border-radius: 20px;
   max-width: none;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .about-me {
+  box-shadow: 0 2px 0 0 var(--secondary);
+  border: 0 solid #000;
+  border-radius: 20px;
   max-width: none;
   height: 100vh;
-  margin-bottom: 100px;
+  margin-top: 2px;
+  padding-bottom: 100px;
 }
 
 .contact {
@@ -2924,6 +2931,7 @@ a {
   align-items: center;
   max-width: none;
   height: 100vh;
+  margin-top: 2px;
   margin-bottom: 0;
   display: flex;
 }
@@ -3234,11 +3242,6 @@ a {
   transform: translate(0);
 }
 
-.hero-heading-right-2.about-me-section {
-  padding-top: 0;
-  transform: translate(0, 50%);
-}
-
 .container-13 {
   width: 100%;
 }
@@ -3252,6 +3255,10 @@ a {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+}
+
+.hero-wrapper-3.aboutmesection {
+  flex-flow: column;
 }
 
 .hero-split-3 {
@@ -3514,7 +3521,7 @@ a {
 }
 
 .parallax_hero_video {
-  z-index: 3;
+  z-index: 4;
   aspect-ratio: auto;
   object-fit: fill;
   width: 110vw;
@@ -3534,7 +3541,7 @@ a {
 }
 
 .parallax_foreground {
-  z-index: 4;
+  z-index: 5;
   width: 110vw;
   height: 150vh;
   display: block;
@@ -3543,7 +3550,7 @@ a {
 }
 
 .cursor_camera {
-  z-index: 5;
+  z-index: 6;
   width: 100px;
   height: 100px;
   margin-top: -50px;
@@ -3570,13 +3577,15 @@ a {
 
 .priyam-info-mask-contact {
   z-index: 2;
+  margin-bottom: var(--priyam-info-mask-scroll);
   -webkit-text-fill-color: inherit;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
   background-clip: content-box;
   width: 100vw;
   height: 100vh;
-  position: relative;
+  position: fixed;
+  inset: auto 0% 0%;
   overflow: hidden;
 }
 
@@ -3609,6 +3618,14 @@ a {
 .div-block-14 {
   width: auto;
   height: 100px;
+}
+
+.parallax_truck {
+  z-index: 3;
+  width: 110vw;
+  height: 150vh;
+  position: absolute;
+  inset: auto 0% 0% -5vh;
 }
 
 @media screen and (max-width: 991px) {
