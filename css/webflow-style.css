@@ -2951,7 +2951,7 @@ a {
   margin-top: 3vw;
   margin-bottom: 1vw;
   margin-left: 3vw;
-  font-size: 140px;
+  font-size: 16.5vh;
   font-weight: 700;
   line-height: 120%;
   position: fixed;
@@ -3090,7 +3090,7 @@ a {
   margin-top: 3vw;
   margin-bottom: 1vw;
   margin-left: 3vw;
-  font-size: 140px;
+  font-size: 16.5vh;
   font-weight: 700;
   line-height: 120%;
   position: fixed;
@@ -3628,6 +3628,28 @@ a {
   inset: auto 0% 0% -5vh;
 }
 
+.preloader {
+  z-index: 9999;
+  background-image: url("../images/graph-paper.svg");
+  background-position: 0 0;
+  background-size: 75px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: fixed;
+  inset: 0%;
+}
+
+.loading {
+  opacity: 1;
+  color: var(--typeface);
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+}
+
 @media screen and (max-width: 991px) {
   .container {
     max-width: 728px;
@@ -3803,7 +3825,7 @@ a {
   }
 
   .text-block-2-copy {
-    font-size: 140px;
+    font-size: 16.5vh;
   }
 
   .priyam-infoscrollmask {
