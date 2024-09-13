@@ -768,7 +768,7 @@
                 </div>
                 <p class="margin-bottom-24px-4">
                   I’m a 25-year-old 3D generalist with a deep passion for
-                  gaming, based in Eastern Canada. 3D is my lifeblood.<br /><br />My
+                  gaming, based in Eastern Canada.<br /><br />My
                   goal is to bring a smile to my audience with every project I
                   tackle.<br /><br />I specialize in 3D Modeling, Texturing,
                   Rigging, and Animation, crafting finely detailed and optimized
@@ -873,40 +873,7 @@
       <div class="text-block-2-copy">Priyam.info</div>
     </div>
     <div class="text-block-2">Priyam.info</div>
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-		  var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
-  
-		  if ("IntersectionObserver" in window) {
-			var lazyVideoObserver = new IntersectionObserver(function (
-			  entries,
-			  observer
-			) {
-			  entries.forEach(function (video) {
-				if (video.isIntersecting) {
-				  for (var source in video.target.children) {
-					var videoSource = video.target.children[source];
-					if (
-					  typeof videoSource.tagName === "string" &&
-					  videoSource.tagName === "SOURCE"
-					) {
-					  videoSource.src = videoSource.dataset.src;
-					}
-				  }
-  
-				  video.target.load();
-				  video.target.classList.remove("lazy");
-				  lazyVideoObserver.unobserve(video.target);
-				}
-			  });
-			});
-  
-			lazyVideos.forEach(function (lazyVideo) {
-			  lazyVideoObserver.observe(lazyVideo);
-			});
-		  }
-		});
-	  </script>
+
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/webflow-script.js" type="text/javascript"></script>
   </body>
