@@ -3326,6 +3326,7 @@ a {
   -webkit-text-fill-color: inherit;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+  cursor: auto;
   background-clip: content-box;
   width: 100vw;
   height: 100vh;
@@ -3499,6 +3500,7 @@ a {
 
 .parallax-video {
   z-index: 1;
+  cursor: auto;
   perspective: 300px;
   flex-flow: column;
   justify-content: center;
@@ -3570,6 +3572,8 @@ a {
 
 .cursor_camera {
   z-index: 6;
+  -webkit-text-fill-color: inherit;
+  background-clip: border-box;
   width: 100px;
   height: 100px;
   margin-top: -50px;
@@ -3701,6 +3705,7 @@ a {
 }
 
 .static_video {
+  cursor: auto;
   display: none;
   position: absolute;
 }
