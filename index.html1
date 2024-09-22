@@ -5,6 +5,17 @@
   data-wf-status="1"
 >
   <head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NB38PFY5X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4NB38PFY5X');
+    </script>
+
     <meta charset="utf-8" />
     <title>Priyam.info</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -122,7 +133,6 @@
             style="
               background-image: url('images/66cae15e4043347f9ae8b490-2f66d5cab413879165c07dde0b_parallax_background-poster-00001.png');
             "
-            poster="images/66cae15e4043347f9ae8b490-2f66d5cab413879165c07dde0b_parallax_background-poster-00001.png"
             muted=""
             playsinline=""
             data-wf-ignore="true"
@@ -156,7 +166,6 @@
             style="
               background-image: url('images/66cae15e4043347f9ae8b490-2f66d5caba83be2472be3e052b_parallax_background_mid-poster-00001.png');
             "
-            poster="images/66cae15e4043347f9ae8b490-2f66d5caba83be2472be3e052b_parallax_background_mid-poster-00001.png"
             muted=""
             playsinline=""
             data-wf-ignore="true"
@@ -186,7 +195,6 @@
             style="
               background-image: url('images/66cae15e4043347f9ae8b490-2f66d651961119937aa2dc8333_parallax_truck-poster-00001.png');
             "
-            poster="images/66cae15e4043347f9ae8b490-2f66d651961119937aa2dc8333_parallax_truck-poster-00001.png"
             muted=""
             playsinline=""
             data-wf-ignore="true"
@@ -216,7 +224,6 @@
             style="
               background-image: url('images/66cae15e4043347f9ae8b490-2f66d4ff801aaf43d6c18f80aa_herofull-poster-00001.png');
             "
-            poster="images/66cae15e4043347f9ae8b490-2f66d4ff801aaf43d6c18f80aa_herofull-poster-00001.png"
             muted=""
             playsinline=""
             data-wf-ignore="true"
@@ -246,7 +253,6 @@
             style="
               background-image: url('images/66cae15e4043347f9ae8b490-2f66d5cac7bfcdedc1cad81645_parallax_foreground-poster-00001.png');
             "
-            poster="images/66cae15e4043347f9ae8b490-2f66d5cac7bfcdedc1cad81645_parallax_foreground-poster-00001.png"
             muted=""
             playsinline=""
             data-wf-ignore="true"
@@ -773,7 +779,7 @@
                 </div>
                 <p class="margin-bottom-24px-4">
                   I’m a 25-year-old 3D generalist with a deep passion for
-                  gaming, based in Eastern Canada.<br /><br />My
+                  gaming and anything 3D, based in Eastern Canada.<br /><br />My
                   goal is to bring a smile to my audience with every project I
                   tackle.<br /><br />I specialize in 3D Modeling, Texturing,
                   Rigging, and Animation, crafting finely detailed and optimized
