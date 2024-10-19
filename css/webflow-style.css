@@ -3305,7 +3305,7 @@ a {
   border-radius: 0;
   padding-top: 0;
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 25px;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -3829,7 +3829,7 @@ a {
   transform: translate(-50%, -50%);
 }
 
-.slide-2 {
+.slide-1 {
   overflow: hidden;
 }
 
@@ -3841,6 +3841,30 @@ a {
   display: inline-block;
   inset: 50%;
   overflow: clip;
+}
+
+.software {
+  box-shadow: 0 2px 0 0 var(--secondary);
+  border-radius: 20px;
+  max-width: none;
+  padding-bottom: 100px;
+}
+
+.softwarephotogrid {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: wrap;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  justify-content: center;
+  place-items: center;
+  display: flex;
+}
+
+.softwareimg {
+  max-width: 100px;
 }
 
 @media screen and (max-width: 991px) {
@@ -4120,6 +4144,21 @@ a {
   .background-video-4 {
     width: 100vw;
     height: 103vh;
+  }
+
+  .software {
+    max-width: none;
+  }
+
+  .softwarephotogrid {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    flex-flow: wrap;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -4427,6 +4466,7 @@ a {
   }
 
   .home_headings {
+    text-align: center;
     padding-left: 19px;
     padding-right: 19px;
   }
@@ -4452,6 +4492,7 @@ a {
 
   .hero-wrapper-3 {
     flex-flow: column;
+    max-width: 1200px;
   }
 
   .hero-split-3 {
@@ -4498,6 +4539,15 @@ a {
 
   .nav_contact_info {
     display: none;
+  }
+
+  .softwarephotogrid {
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -4657,11 +4707,12 @@ a {
   }
 }
 
+
 video::-webkit-media-controls {
-    display:none !important;
+  display:none !important;
 }
 
 *::-webkit-media-controls-start-playback-button {
-  display: none!important;
-  -webkit-appearance: none;
+display: none!important;
+-webkit-appearance: none;
 }
